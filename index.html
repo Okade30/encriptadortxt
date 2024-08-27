@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENCRIPTADOR-TXT</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <a href="#" class="logo-link">
+      <img class="logo" src="./assets/logo.svg" alt="Logo Alura">
+    </a>
+  </header>
+
+  <!-- Sección Principal -->
+  <main class="container">
+    <section class="encryptor-container">
+
+      <textarea class="input-text" name="input-text" id="input-text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+      <!-- letras chiquitas -->
+      <div class="notice">
+        <img src="./assets/aviso.svg" alt="Aviso" class="notice-icon">
+        <p class="notice-text">Solo letras minúsculas y sin acentos</p>
+      </div>
+
+      <!-- botones -->
+      <div class="btn-actions">
+        <button type="button" onclick="encriptar()" class="btn-encrypt">Encriptar</button>
+        <input type="button" class="btn-decrypt" value="Desencriptar" onclick="desencriptar()">
+      </div>
+    </section>
+
+    <section class="encrypted-container">
+      <div class="msg-encrypted" id="msg-encrypted">
+        <img src="./assets/muñeco.svg" alt="Imagen Muñeco" id="card-img" class="card-img">
+        <h2 class="card-text main-text">Ningún mensaje fue encontrado</h2>
+        <p class="card-text sub-text">Ingrese el texto que deseas encriptar o desencriptar</p>
+       
+      </div>
+      
+      <textarea type="mensaje" class="evaluar" readonly></textarea>
+      <button type="submit" class="btn-copiar">Copiar</button>
+
+    </section>
+
+  </main>
+
+<script src="./app.js"></script>
+
+</body>
+
+</html>
